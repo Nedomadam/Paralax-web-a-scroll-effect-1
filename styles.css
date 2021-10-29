@@ -1,4 +1,34 @@
+:root{
+    --black_color: rgb(29, 29, 29);
+    --white_color: honeydew;
+}
+
+nav{
+   background-color: var(--black_color);
+   color: var(--white_color);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 1.2em;
+}
+
+nav > h2{
+    padding-left: 2em;
+    padding-right: 5em;
+}
+
+nav > a > img{
+    margin: 1em;
+    height: 7em;
+}
+
 footer{
-    background-color: grey;
-    color: honeydew;
+    display: flex;
+    background-color: var(--black_color);
+    color: var(--white_color);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    font-size: 1.5em;
 }
