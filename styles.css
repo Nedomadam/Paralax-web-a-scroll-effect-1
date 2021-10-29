@@ -1,6 +1,11 @@
 :root{
     --black_color: rgb(29, 29, 29);
     --white_color: honeydew;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    margin: 0em;
 }
 
 nav{
@@ -20,6 +25,35 @@ nav > h2{
 nav > a > img{
     margin: 1em;
     height: 7em;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url(./Pictures/Main_img_all_character.jpg);
+  
+    /* Set a specific height */
+    height: 100em;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div > div{
+    display: flex;
+    background-color: var(--black_color);
+    color: var(--white_color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.red{
+    color: rgb(133, 10, 34);
+    font-size: 1.6em;
 }
 
 footer{
