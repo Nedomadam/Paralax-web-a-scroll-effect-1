@@ -32,7 +32,21 @@ nav > a > img{
     background-image: url(./Pictures/Main_img_all_character.jpg);
   
     /* Set a specific height */
-    height: 100em;
+    height: 60em;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax_1 {
+    /* The image used */
+    background-image: url(./Pictures/dd2.jpg);
+  
+    /* Set a specific height */
+    height: 60em;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -60,9 +74,14 @@ footer{
     display: flex;
     background-color: var(--black_color);
     color: var(--white_color);
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 5em;
-    font-size: 1.5em;
+}
+
+.footer_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
