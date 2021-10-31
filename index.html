@@ -9,35 +9,49 @@
 </head>
 <body>
     <nav>
-        <a><img src="./Pictures/Torch.svg" alt="Darkest dungeon torch"></a>
+        <img src="./Pictures/Torch.svg" alt="Darkest dungeon torch">
         <h2>Darkest Dungeon II</h5>
     </nav>
 
     <div>
         <div class="parallax">
-            <a><img src="./Pictures/Ancestor_Clean-NoBack.svg" alt="Ancestor"></a>
+            <img class="img_an" src="./Pictures/Ancestor_Clean-NoBack.svg" alt="Ancestor">
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, earum ullam tempora odit quos vitae maiores nobis quam ad sunt non illo! Rerum mollitia, dolor assumenda excepturi provident esse eveniet!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, iste? Eos, laboriosam incidunt consectetur quas assumenda cupiditate commodi omnis quam nemo mollitia unde ipsam et quod veniam aliquid architecto ex.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam recusandae maxime, provident nulla, accusamus ad natus doloremque architecto error obcaecati nostrum aliquam in debitis repellendus iusto facilis similique rerum voluptas!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id odit sed unde molestias maxime cum sequi ipsam necessitatibus pariatur? Itaque ipsum, facere blanditiis similique dicta fugit adipisci natus illo! Sunt?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui neque quod repudiandae maxime ullam eos? Iusto ad perferendis nemo veritatis rem dignissimos eveniet pariatur amet error! Id, dolorem! Deserunt, itaque?
+            </p>
         </div>
 
-        <div>
+        <div class="line">
             <p>Can you survive? All the horrors of your past actions? Or will you perish as everyone before you?</p>
             <p class="red">I guess we will see...</p>
-        </div>
-
-        <div class="parallax_1">
-            <a><img src="./Pictures/Ancestor-NoBack.svg" alt="Ancestor"></a>
         </div>
     </div>
 
     <footer>
         <p class="footer_img">
-            <a><img src="./Pictures/Facebook_Stranka.svg" alt="Facebook icon"></a>
-            <a><img src="./Pictures/Instagram_Stranka.svg" alt="Instagram icon"></a>
+            <img src="./Pictures/Facebook_Stranka.svg" alt="Facebook icon">
+            <img src="./Pictures/Instagram_Stranka.svg" alt="Instagram icon">
         </p>
         <p>
             © Copyright, nothing is mine all is stolen. I dont own anything
         </p>
     </footer>
+    
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const text = document.querySelector(".text");
+            const img_an = document.querySelector(".img_an");
 
+
+            img_an.style.left = 100 + e.pageX/2 + 'px';
+
+            text.style.right = 100 + e.pageX/2 + 'px';
+        })
+    </script>
     
 </body>
 </html>
